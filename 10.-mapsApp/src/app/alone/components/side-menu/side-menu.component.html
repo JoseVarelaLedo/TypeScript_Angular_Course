@@ -3,6 +3,7 @@
   <li *ngFor="let item of menuItems"
     [routerLink]="[ item.route ]"
     routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
     class="list-group-item">
     {{ item.name }}
   </li>
